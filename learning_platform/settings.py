@@ -151,4 +151,4 @@ YOUTUBE_CHANNEL_ID = "UCON7G9L2CdpJKVJt7DIqTcQ"
 LOGIN_URL = 'app:login'
 LOGIN_REDIRECT_URL = 'app:index'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'

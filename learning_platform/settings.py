@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+ 'whitenoise.middleware.WhiteNoiseMiddleware', 
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -149,3 +150,5 @@ DEFAULT_FROM_EMAIL = 'projectclient26@gmail.com'
 YOUTUBE_CHANNEL_ID = "UCON7G9L2CdpJKVJt7DIqTcQ"
 LOGIN_URL = 'app:login'
 LOGIN_REDIRECT_URL = 'app:index'
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

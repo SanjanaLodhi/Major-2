@@ -160,9 +160,7 @@ EMAIL_USE_SSL = False
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = 'projectclient26@gmail.com'
-
-
-
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 YOUTUBE_CHANNEL_ID = "UCON7G9L2CdpJKVJt7DIqTcQ"
 LOGIN_URL = 'app:login'
